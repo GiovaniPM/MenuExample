@@ -12,6 +12,8 @@
     <link href="http://vadikom.github.io/smartmenus/src/css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
 </head>
 
+<!--http://vadikom.github.io/smartmenus/src/demo/index.html#-->
+
 <!-- #main-menu config - instance specific stuff not covered in the theme -->
 <!-- You could put this in an external stylesheet (e.g. where the rest of your page styles are) -->
 <style type="text/css">
@@ -25,13 +27,25 @@
 	}
 </style>
 
+<!-- #main-menu config - instance specific stuff not covered in the theme -->
+<!-- You could put this in an external stylesheet (e.g. where the rest of your page styles are) -->
+<!--<style type="text/css">
+	@media (min-width: 768px) {
+		#main-menu {
+			float: left;
+			width: 12em;
+		}
+	}
+</style>-->
+
 <body>
 
 <!-- Navbar -->
 <nav id="main-nav">
     <!-- Sample menu definition -->
     <ul id="main-menu" class="sm sm-blue">
-      <li><a href="http://www.smartmenus.org/">Home</a></li>
+    <!--<ul id="main-menu" class="sm sm-vertical sm-blue"></ul>-->
+      <li><a href="http://www.smartmenus.org/">GrupoRBS</a></li>
       <li><a href="http://www.smartmenus.org/about/">About</a>
         <ul>
           <li><a href="http://www.smartmenus.org/about/introduction-to-smartmenus-jquery/">Introduction to SmartMenus jQuery</a></li>
@@ -163,6 +177,7 @@
       </li>
     </ul>
   </nav>
+
   <!-- jQuery -->
 <script type="text/javascript" src="http://vadikom.github.io/smartmenus/src/libs/jquery/jquery.js"></script>
 
@@ -178,6 +193,18 @@
 		});
 	});
 </script>
+
+<!-- SmartMenus jQuery init -->
+<!--<script type="text/javascript">
+	$(function() {
+		$('#main-menu').smartmenus({
+			mainMenuSubOffsetX: 1,
+			mainMenuSubOffsetY: -8,
+			subMenusSubOffsetX: 1,
+			subMenusSubOffsetY: -8
+		});
+	});
+</script>-->
 
 </body>
 
